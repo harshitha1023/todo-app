@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 
-const API = "/api/todos";
+const API = (import.meta.env.VITE_API_URL || "") + "/api/todos";
 const JSON_HEADERS = { "Content-Type": "application/json" };
 
 export default function App() {
